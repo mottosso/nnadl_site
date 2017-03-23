@@ -18,20 +18,23 @@
 /*                                                                   */
 /* #eee: header text                                                 */
 
+@import url(https://fonts.googleapis.com/css?family=Lato:300, 400, 600, 700, 300italic, 700italic);
+
 
 /* Reset */
 
 body {
     background: #fff;
     font-style: normal;
-    font: 15pt 'Georgia', 'Times New Roman', serif; 
-    line-height: 1.7;
+    font: 400 0.875em/1.58 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font: 12pt 'Georgia', 'Times New Roman', serif; */
+    line-height: 1.3;
     /* font-family: "Helvetica", "Arial", sans-serif; */
-    color: #000;
-    width: 100%;
+    color: #333;
+    /*width: 100%;*/
     margin: 0;
     padding: 0;
-    text-align: left;
+    /*text-align: left;*/
     position: relative;
 }
 
@@ -61,7 +64,7 @@ h1 {
     right: 40px;
     padding: 0px;
     margin: 0px;
-    font-family: "Helvetica", "Arial", sans-serif;
+    /*font-family: "Helvetica", "Arial", sans-serif;*/
     font-size: 34px;
     line-height: 1.2;
     color: #eee;
@@ -94,7 +97,7 @@ h2 {
     left: 40px;
     right: 40px;
     padding: 0px;
-    margin: 16px 0px 0px 0px;
+    /*margin: 16px 0px 0px 0px;*/
     font-family: "Helvetica", "Arial", sans-serif;
     font-size: 34px;
     line-height: 1.2;
@@ -111,7 +114,7 @@ h2 a {
 /********/
 
 #insertion {
-    font: 15pt 'Georgia', 'Times New Roman', serif; 
+    /*font: 15pt 'Georgia', 'Times New Roman', serif; */
     line-height: 1.7;
     color: #333;
     padding: 5px 10px 5px 10px;
@@ -120,31 +123,9 @@ h2 a {
     margin: 10px 0px 0px 0px;
 }
 
-p {
-    font: 15pt 'Georgia', 'Times New Roman', serif; 
-    line-height: 1.7;
-    color: #333;
-    margin: 0 0 1 0;
-}
-
-h3 {
-    color: #1C3950;
-    margin: 40px 0px 20px 0px;
-    padding: 0;
-    font-size: 32px;
-    line-height: 1.2;
-    font-family: "Helvetica", "Arial", sans-serif;
-    border-bottom: 1px solid #666;
-}
-
-h4 {
-    color: #1C3950;
-    margin: 30px 0px 15px 0px;
-    padding: 0;
-    padding-left: 0px;
-    font-size: 26px;
-    line-height: 1.2;
-    font-family: "Helvetica", "Arial", sans-serif;
+h4, h3 {
+    margin-top: 150px;
+    font-size: 2em;
 }
 
 h5 {
@@ -154,12 +135,12 @@ h5 {
     padding-left: 0px;
     font-size: 26px;
     line-height: 1.2;
-    font-family: "Helvetica", "Arial", sans-serif;
 }
 
 .section {
     width: 600px;
-    margin-left: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a { 
@@ -186,13 +167,22 @@ a:hover {
 
 /* Set the font size for Pygments */
 .highlight {
-    font-size: 9pt;
+    background: #F9F9F9;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    font-family: "Source Code Pro";
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    padding: 0.8em;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* Set the font size for code */
 tt {
     font-size: 12pt;
-    font-style: monospace;
+    /*font-style: monospace;*/
 }
 
 
@@ -220,18 +210,24 @@ path {
   font-weight: bold;
 }
 
-
 /* Table of contents, and margin notes */
 
 #toc, .marginnote, .marginequation {
+    display: none;
     position: absolute;
-    left: 680px;
-    width: 260px;
-    padding: 0;
-    margin: 0;
+    /*left: 780px;*/
+    /*x: 100px;*/
+    width: 240px;
+    /*padding: auto;*/
+    margin-left: auto;
+    margin-right: auto;
+    /*position: relative;*/
+    right: -40px;
+    text-align: center;
 }
 
 .sidebar {
+    display: none;
     margin: 0 0 5px 0;
     padding: 0;
     font-size: 12pt;
@@ -353,6 +349,11 @@ span.right_footer {
     cursor: pointer;
     background-color: white;
     z-index: 100;
+}
+
+img {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .videoOverlay img {
