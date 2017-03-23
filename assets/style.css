@@ -18,7 +18,7 @@
 /*                                                                   */
 /* #eee: header text                                                 */
 
-@import url(https://fonts.googleapis.com/css?family=Lato:300, 400, 600, 700, 300italic, 700italic);
+@import url("https://fonts.googleapis.com/css?family=Lato:300, 400, 600, 700, 300italic, 700italic");
 
 
 /* Reset */
@@ -26,15 +26,11 @@
 body {
     background: #fff;
     font-style: normal;
-    font: 400 0.875em/1.58 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    /*font: 12pt 'Georgia', 'Times New Roman', serif; */
+    font: 400 0.950em/1.58 Lato;
     line-height: 1.3;
-    /* font-family: "Helvetica", "Arial", sans-serif; */
     color: #333;
-    /*width: 100%;*/
     margin: 0;
     padding: 0;
-    /*text-align: left;*/
     position: relative;
 }
 
@@ -42,11 +38,8 @@ body {
 /* Header */
 
 .header, .nonumber_header {
-    position: relative;
-    top: 0px;
     width: 100%;
-    margin: 0;
-    background-color: #1C3950;
+    background-color: #444;
 }
 
 .header {
@@ -58,33 +51,19 @@ body {
 }
 
 h1 {
-    position: absolute;
-    top: 0px;
-    left: 40px;
-    right: 40px;
-    padding: 0px;
     margin: 0px;
-    /*font-family: "Helvetica", "Arial", sans-serif;*/
-    font-size: 34px;
     line-height: 1.2;
-    color: #eee;
+    text-align: center;
     white-space: nowrap;
-    font-weight: 400;
 }
 
 h1.chapter_number {
-    margin-top: 10px;
+    padding-top: 25px;
     font-size: 24px;
-    border-bottom: 1px solid #BBB;
 }
 
 h1.chapter_number a {
     color: #eee;
-}
-
-h1.chapter_title {
-    margin-top: 56px;
-    font-size: 34px;
 }
 
 h1.chapter_title a {
@@ -97,8 +76,6 @@ h2 {
     left: 40px;
     right: 40px;
     padding: 0px;
-    /*margin: 16px 0px 0px 0px;*/
-    font-family: "Helvetica", "Arial", sans-serif;
     font-size: 34px;
     line-height: 1.2;
     color: #eee;
@@ -114,7 +91,6 @@ h2 a {
 /********/
 
 #insertion {
-    /*font: 15pt 'Georgia', 'Times New Roman', serif; */
     line-height: 1.7;
     color: #333;
     padding: 5px 10px 5px 10px;
@@ -138,7 +114,7 @@ h5 {
 }
 
 .section {
-    width: 600px;
+    width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -182,7 +158,6 @@ a:hover {
 /* Set the font size for code */
 tt {
     font-size: 12pt;
-    /*font-style: monospace;*/
 }
 
 
@@ -192,9 +167,11 @@ path {
     stroke-width: 1;
     fill: none;
 }
+
 .axis {
     shape-rendering: crispEdges;
 }
+
 .axis text {
     font-family: "Helvetica", "Arial", sans-serif;
     font-size: 11px;
@@ -215,13 +192,9 @@ path {
 #toc, .marginnote, .marginequation {
     display: none;
     position: absolute;
-    /*left: 780px;*/
-    /*x: 100px;*/
     width: 240px;
-    /*padding: auto;*/
     margin-left: auto;
     margin-right: auto;
-    /*position: relative;*/
     right: -40px;
     text-align: center;
 }
@@ -275,7 +248,6 @@ path {
 
 .sidebar_title {
     font-size: 18pt;
-    font-family: "Helvetica", "Arial", sans-serif;
 }
 
 .marginnote {
@@ -318,7 +290,6 @@ span.left_footer, span.right_footer {
     left: 40px;
     padding: 0px;
     margin: 0px;
-    font-family: "Helvetica", "Arial", sans-serif;
     font-size: 9pt;
     font-style: bold;
     line-height: 1.5;
