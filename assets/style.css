@@ -26,7 +26,7 @@
 body {
     background: #fff;
     font-style: normal;
-    font: 400 0.950em/1.58 Lato;
+    font: 400 0.900em/1.58 Lato;
     line-height: 1.3;
     color: #333;
     margin: 0;
@@ -114,7 +114,7 @@ h5 {
 }
 
 .section {
-    width: 700px;
+    width: 650px;
     margin-left: auto;
     margin-right: auto;
 }
